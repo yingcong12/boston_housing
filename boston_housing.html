@@ -11807,7 +11807,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 载入此项目所需要的库</span>
@@ -11831,7 +11831,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 载入波士顿房屋的数据集</span>
@@ -11898,25 +11898,25 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#TODO 1</span>
 
 <span class="c1">#目标：计算价值的最小值</span>
-<span class="n">minimum_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="n">minimum_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1">#目标：计算价值的最大值</span>
-<span class="n">maximum_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="n">maximum_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1">#目标：计算价值的平均值</span>
-<span class="n">mean_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">mean_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1">#目标：计算价值的中值</span>
-<span class="n">median_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<span class="n">median_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1">#目标：计算价值的标准差</span>
-<span class="n">std_price</span> <span class="o">=</span> <span class="n">prices</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="n">std_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c1">#目标：输出计算的结果</span>
 <span class="k">print</span> <span class="s2">&quot;Statistics for Boston housing dataset:</span><span class="se">\n</span><span class="s2">&quot;</span>
@@ -11945,7 +11945,7 @@ Minimum price: $105,000.00
 Maximum price: $1,024,800.00
 Mean price: $454,342.94
 Median price $438,900.00
-Standard deviation of prices: $165,340.28
+Standard deviation of prices: $165,171.13
 </pre>
 </div>
 </div>
@@ -11998,7 +11998,7 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO 2</span>
@@ -12031,7 +12031,7 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#38382;&#39064;-2---&#22238;&#31572;:-1.-Using-certain-part-of-data-for-traininng-will-prevent-overfitting-to-some-extend-and-there-is-test-set-for-testing-the-performance-of-the-algorithm-2.-Using-all-the-data-for-train-will-results-in-overfitting-and-do-not-know-the-performance-of-the-algorithm">&#38382;&#39064; 2 - &#22238;&#31572;: 1. Using certain part of data for traininng will prevent overfitting to some extend and there is test set for testing the performance of the algorithm 2. Using all the data for train will results in overfitting and do not know the performance of the algorithm<a class="anchor-link" href="#&#38382;&#39064;-2---&#22238;&#31572;:-1.-Using-certain-part-of-data-for-traininng-will-prevent-overfitting-to-some-extend-and-there-is-test-set-for-testing-the-performance-of-the-algorithm-2.-Using-all-the-data-for-train-will-results-in-overfitting-and-do-not-know-the-performance-of-the-algorithm">&#182;</a></h3>
+<h3 id="&#38382;&#39064;-2---&#22238;&#31572;:-1.-&#23558;&#25968;&#25454;&#38598;&#20998;&#25104;&#35757;&#32451;&#38598;&#21644;&#27979;&#35797;&#38598;&#30340;&#22909;&#22788;&#65306;&#29992;&#27809;&#26377;&#35757;&#32451;&#36807;&#30340;&#25968;&#25454;&#36827;&#34892;&#39044;&#27979;&#65292;&#20943;&#23569;&#39044;&#27979;&#30340;bias&#65292;&#23545;&#35757;&#32451;&#27169;&#22411;&#36827;&#34892;&#26377;&#25928;&#30340;&#39564;&#35777;&#65292;&#19981;&#20250;&#20114;&#30456;&#24178;&#25200;-2.-&#29992;&#37096;&#20998;&#35757;&#32451;&#38598;&#36827;&#34892;&#27979;&#35797;&#30340;&#22351;&#22788;&#65306;&#27169;&#22411;&#23601;&#26159;&#26681;&#25454;&#35757;&#32451;&#38598;&#24471;&#20986;&#30340;&#65292;&#20351;&#29992;&#35757;&#32451;&#38598;&#36827;&#34892;&#27979;&#35797;&#32943;&#23450;&#20250;&#24471;&#20986;&#36739;&#22909;&#30340;&#32467;&#26524;&#65292;&#36825;&#19981;&#33021;&#21028;&#26029;&#35757;&#32451;&#27169;&#22411;&#30340;&#20248;&#21155;&#12290;">&#38382;&#39064; 2 - &#22238;&#31572;: 1. &#23558;&#25968;&#25454;&#38598;&#20998;&#25104;&#35757;&#32451;&#38598;&#21644;&#27979;&#35797;&#38598;&#30340;&#22909;&#22788;&#65306;&#29992;&#27809;&#26377;&#35757;&#32451;&#36807;&#30340;&#25968;&#25454;&#36827;&#34892;&#39044;&#27979;&#65292;&#20943;&#23569;&#39044;&#27979;&#30340;bias&#65292;&#23545;&#35757;&#32451;&#27169;&#22411;&#36827;&#34892;&#26377;&#25928;&#30340;&#39564;&#35777;&#65292;&#19981;&#20250;&#20114;&#30456;&#24178;&#25200; 2. &#29992;&#37096;&#20998;&#35757;&#32451;&#38598;&#36827;&#34892;&#27979;&#35797;&#30340;&#22351;&#22788;&#65306;&#27169;&#22411;&#23601;&#26159;&#26681;&#25454;&#35757;&#32451;&#38598;&#24471;&#20986;&#30340;&#65292;&#20351;&#29992;&#35757;&#32451;&#38598;&#36827;&#34892;&#27979;&#35797;&#32943;&#23450;&#20250;&#24471;&#20986;&#36739;&#22909;&#30340;&#32467;&#26524;&#65292;&#36825;&#19981;&#33021;&#21028;&#26029;&#35757;&#32451;&#27169;&#22411;&#30340;&#20248;&#21155;&#12290;<a class="anchor-link" href="#&#38382;&#39064;-2---&#22238;&#31572;:-1.-&#23558;&#25968;&#25454;&#38598;&#20998;&#25104;&#35757;&#32451;&#38598;&#21644;&#27979;&#35797;&#38598;&#30340;&#22909;&#22788;&#65306;&#29992;&#27809;&#26377;&#35757;&#32451;&#36807;&#30340;&#25968;&#25454;&#36827;&#34892;&#39044;&#27979;&#65292;&#20943;&#23569;&#39044;&#27979;&#30340;bias&#65292;&#23545;&#35757;&#32451;&#27169;&#22411;&#36827;&#34892;&#26377;&#25928;&#30340;&#39564;&#35777;&#65292;&#19981;&#20250;&#20114;&#30456;&#24178;&#25200;-2.-&#29992;&#37096;&#20998;&#35757;&#32451;&#38598;&#36827;&#34892;&#27979;&#35797;&#30340;&#22351;&#22788;&#65306;&#27169;&#22411;&#23601;&#26159;&#26681;&#25454;&#35757;&#32451;&#38598;&#24471;&#20986;&#30340;&#65292;&#20351;&#29992;&#35757;&#32451;&#38598;&#36827;&#34892;&#27979;&#35797;&#32943;&#23450;&#20250;&#24471;&#20986;&#36739;&#22909;&#30340;&#32467;&#26524;&#65292;&#36825;&#19981;&#33021;&#21028;&#26029;&#35757;&#32451;&#27169;&#22411;&#30340;&#20248;&#21155;&#12290;">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -12068,7 +12068,7 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO 3</span>
@@ -12091,7 +12091,7 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO 3 可选</span>
@@ -12100,8 +12100,8 @@ Standard deviation of prices: $165,340.28
 
 <span class="k">def</span> <span class="nf">performance_metric2</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;计算并返回预测值相比于预测值的分数&quot;&quot;&quot;</span>
-    <span class="n">SSR</span> <span class="o">=</span> <span class="p">((</span><span class="n">y_true</span><span class="o">-</span><span class="n">y_predict</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-    <span class="n">SST</span> <span class="o">=</span> <span class="p">((</span><span class="n">y_true</span><span class="o">-</span><span class="n">y_true</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="n">SSR</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y_true</span><span class="p">)</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y_predict</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">SST</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y_true</span><span class="p">)</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">y_true</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
     <span class="n">score</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span> <span class="n">SSR</span><span class="o">/</span><span class="n">SST</span>
 
     <span class="k">return</span> <span class="n">score</span>
@@ -12155,7 +12155,7 @@ Standard deviation of prices: $165,340.28
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 计算这个模型的预测结果的决定系数</span>
@@ -12174,23 +12174,9 @@ Standard deviation of prices: $165,340.28
 <div class="output_area">
 <div class="prompt"></div>
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-12-a8687ec53400&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-red-fg"># 计算这个模型的预测结果的决定系数</span>
-<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span>score <span class="ansi-blue-fg">=</span> performance_metric2<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">0.5</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">7</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">4.2</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2.5</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">0.0</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">2.1</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">7.8</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">5.3</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> <span class="ansi-green-fg">print</span> <span class="ansi-blue-fg">&#34;Model has a coefficient of determination, R^2, of {:.3f}.&#34;</span><span class="ansi-blue-fg">.</span>format<span class="ansi-blue-fg">(</span>score<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">&lt;ipython-input-11-efc4e29ddb0d&gt;</span> in <span class="ansi-cyan-fg">performance_metric2</span><span class="ansi-blue-fg">(y_true, y_predict)</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-green-fg">def</span> performance_metric2<span class="ansi-blue-fg">(</span>y_true<span class="ansi-blue-fg">,</span> y_predict<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span>     <span class="ansi-blue-fg">&#34;&#34;&#34;计算并返回预测值相比于预测值的分数&#34;&#34;&#34;</span>
-<span class="ansi-green-fg">----&gt; 7</span><span class="ansi-red-fg">     </span>SSR <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">(</span>y_true<span class="ansi-blue-fg">-</span>y_predict<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">**</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>sum<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      8</span>     SST <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">(</span>y_true<span class="ansi-blue-fg">-</span>y_true<span class="ansi-blue-fg">.</span>mean<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">**</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>sum<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      9</span>     score <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">-</span> SSR<span class="ansi-blue-fg">/</span>SST
-
-<span class="ansi-red-fg">TypeError</span>: unsupported operand type(s) for -: &#39;list&#39; and &#39;list&#39;</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Model has a coefficient of determination, R^2, of 0.923.
+</pre>
 </div>
 </div>
 
@@ -13858,7 +13844,7 @@ ASiYubZqAgzQAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO 4</span>
@@ -13912,7 +13898,7 @@ ASiYubZqAgzQAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO 4 可选</span>
@@ -13955,7 +13941,7 @@ ASiYubZqAgzQAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 基于训练数据，获得最优模型</span>
@@ -13977,7 +13963,7 @@ ASiYubZqAgzQAAAAAElFTkSuQmCC
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Parameter &#39;max_depth&#39; is 4 for the optimal model.
+<pre>Parameter &#39;max_depth&#39; is 5 for the optimal model.
 </pre>
 </div>
 </div>
@@ -14091,7 +14077,7 @@ Predicted selling price for Client 3&#39;s home: $942,666.67
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#38382;&#39064;-10---&#22238;&#31572;&#65306;">&#38382;&#39064; 10 - &#22238;&#31572;&#65306;<a class="anchor-link" href="#&#38382;&#39064;-10---&#22238;&#31572;&#65306;">&#182;</a></h3>
+<h3 id="&#38382;&#39064;-10---&#22238;&#31572;&#65306;&#21512;&#29702;&#65292;&#22240;&#20026;&#22343;&#20540;&#26159;$454,342.94&#65292;&#19977;&#20010;&#25512;&#33616;&#20215;&#26684;&#30340;&#22343;&#20540;&#22312;$454,342.94&#38468;&#36817;&#65292;&#32780;&#19988;&#22312;minimum-price&#21644;maximum-price&#20043;&#38388;">&#38382;&#39064; 10 - &#22238;&#31572;&#65306;&#21512;&#29702;&#65292;&#22240;&#20026;&#22343;&#20540;&#26159;$454,342.94&#65292;&#19977;&#20010;&#25512;&#33616;&#20215;&#26684;&#30340;&#22343;&#20540;&#22312;$454,342.94&#38468;&#36817;&#65292;&#32780;&#19988;&#22312;minimum price&#21644;maximum price&#20043;&#38388;<a class="anchor-link" href="#&#38382;&#39064;-10---&#22238;&#31572;&#65306;&#21512;&#29702;&#65292;&#22240;&#20026;&#22343;&#20540;&#26159;$454,342.94&#65292;&#19977;&#20010;&#25512;&#33616;&#20215;&#26684;&#30340;&#22343;&#20540;&#22312;$454,342.94&#38468;&#36817;&#65292;&#32780;&#19988;&#22312;minimum-price&#21644;maximum-price&#20043;&#38388;">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14158,7 +14144,7 @@ Predicted selling price for Client 3&#39;s home: $942,666.67
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#38382;&#39064;11---&#22238;&#31572;-as-yhat-=-y-in-the-test-set,-so-r_2-score-is-1">&#38382;&#39064;11 - &#22238;&#31572; as yhat = y in the test set, so r_2 score is 1<a class="anchor-link" href="#&#38382;&#39064;11---&#22238;&#31572;-as-yhat-=-y-in-the-test-set,-so-r_2-score-is-1">&#182;</a></h3>
+<h3 id="&#38382;&#39064;11---&#22238;&#31572;-0.75&#30340;&#20915;&#23450;&#31995;&#25968;&#65292;&#34429;&#28982;&#19981;&#26159;&#24456;&#39640;&#20294;&#26159;&#22522;&#26412;&#28385;&#36275;&#35201;&#27714;&#12290;">&#38382;&#39064;11 - &#22238;&#31572; 0.75&#30340;&#20915;&#23450;&#31995;&#25968;&#65292;&#34429;&#28982;&#19981;&#26159;&#24456;&#39640;&#20294;&#26159;&#22522;&#26412;&#28385;&#36275;&#35201;&#27714;&#12290;<a class="anchor-link" href="#&#38382;&#39064;11---&#22238;&#31572;-0.75&#30340;&#20915;&#23450;&#31995;&#25968;&#65292;&#34429;&#28982;&#19981;&#26159;&#24456;&#39640;&#20294;&#26159;&#22522;&#26412;&#28385;&#36275;&#35201;&#27714;&#12290;">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14220,7 +14206,7 @@ Range in prices: $28,652.84
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#38382;&#39064;-12---&#22238;&#31572;-They-change-randomly">&#38382;&#39064; 12 - &#22238;&#31572; They change randomly<a class="anchor-link" href="#&#38382;&#39064;-12---&#22238;&#31572;-They-change-randomly">&#182;</a></h3>
+<h3 id="&#38382;&#39064;-12---&#22238;&#31572;-They-change-randomly&#65292;&#20581;&#22766;&#65292;&#22240;&#20026;10&#27425;&#39044;&#27979;&#30340;&#20540;&#37117;&#22312;400&#19975;&#24038;&#21491;&#12290;">&#38382;&#39064; 12 - &#22238;&#31572; They change randomly&#65292;&#20581;&#22766;&#65292;&#22240;&#20026;10&#27425;&#39044;&#27979;&#30340;&#20540;&#37117;&#22312;400&#19975;&#24038;&#21491;&#12290;<a class="anchor-link" href="#&#38382;&#39064;-12---&#22238;&#31572;-They-change-randomly&#65292;&#20581;&#22766;&#65292;&#22240;&#20026;10&#27425;&#39044;&#27979;&#30340;&#20540;&#37117;&#22312;400&#19975;&#24038;&#21491;&#12290;">&#182;</a></h3>
 </div>
 </div>
 </div>
